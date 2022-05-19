@@ -5,4 +5,4 @@ sparkfun:
 
 	riscv64-unknown-elf-objcopy -O ihex hello.elf hello.hex
 clean:
-	rm *.hex *.elf
+	rm *.hex *.elf *.map
