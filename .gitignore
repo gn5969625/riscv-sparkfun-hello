@@ -1,0 +1,6 @@
+doc/
+.vscode/
+build/
+*.elf
+*.hex
+*.map
