@@ -12,8 +12,7 @@ _start:
     la    sp, stack_top
     la    a0, msg
     jal   puts
-
-    call BootMain
+    jal main
 
 puts:
     li  t0, UART_BASE
@@ -42,4 +41,4 @@ halt: j halt
 
 .section .rodata
 msg:
-  .string "LowLevelGang.\n"
+  .string "LowLevelKevin.\r\n"
