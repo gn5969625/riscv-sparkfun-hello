@@ -1,9 +1,9 @@
 #include <stdio.h>
 #define UART_TXFIFO_OFF	0
 #define UART_REG_BASE	0x10013000
-//#define DBG_GV 1
+#define DBG_GV 1
 #ifdef DBG_GV
-uint32_t cnt = 0;
+uint32_t cnt = 2;
 #endif
 void main(void)
 {
