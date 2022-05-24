@@ -16,7 +16,7 @@ void main(void)
 #endif
 #ifdef DBG_GV
 	char test_msg[] = "Enter loop in c!\r\n";
-	for (i = 0;i < msg_len; i++) {
+	for (i = 0;i < sizeof(test_msg); i++) {
 		while((int32_t) *uart_buf < 0);
 		*uart_buf = test_msg[i];
 	}
