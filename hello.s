@@ -13,6 +13,7 @@ _start:
     la    a0, msg
     jal   puts
 
+	/* Load data section */
         la t0, _data_lma
         la t1, _data
         beq t0, t1, 2f
